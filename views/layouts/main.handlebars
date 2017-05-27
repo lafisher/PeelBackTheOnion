@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 
+    <title>Paper Scraper</title>
+
+    <!-- Materialize - Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Materialize - Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/style/style.css">
+  </head>
+
+  <body>
+  
+    <!-- Nav Bar -->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo"><i class="material-icons">loop</i> Onion Peeler</a>
+          <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="http://www.theonion.com/" target="_new">The Onion</a></li>
+            <li><a href="https://github.com/lafisher/PeelBackTheOnion" target="_new">Github Repo</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Page Content -->
+    <main> 
+
+      <!-- Site Info Container -->
+      <div class="container">
+        <ul class="collection with-header" id="round">
+          <li class="collection-header grey lighten-2"><h4><b>Huzzah! Thou hast found the Onion Peeler!</b></h4></li>
+          <li class="collection-item">Enjoy the ridiculousness that is The Onion, and feel free to comment (trolls will be drawn and quartered).</li>
+          <li class="collection-item"><div>Click <i class="material-icons">loop</i> in the navbar to re-peel.</div></li>
+          <li class="collection-item"><div>Click <i class="material-icons">language</i> to view article.</div></li>
+          <li class="collection-item"><div>Click <i class="material-icons">comment</i> to add a comment.</div></li>
+          <li class="collection-item"><div>Click <i class="material-icons">thumbs_up_down</i> to read the comments (but you should never read the comments).</div></li>
+        </ul>
+      </div>
+
+
+      <!-- Render All Articles -->
+      <div class="container">
+        {{{body}}}
+      </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-3">
+      <div class="footer-copyright">
+        <div class="container">
+        © Article data scraped from  
+        <a class="grey-text text-lighten-4" href="http://www.theonion.com/">www.theonion.com</a>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Link in jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Materialize - Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+    <!-- Basic Page JavaScript for Repsonsiveness -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    
+  </body>
+
+</html>

@@ -1,0 +1,19 @@
+
+body {
+
+  background-image: url('../images/Image-Green-Background.jpg');
+  background-size: cover;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.nav-wrapper {
+  background-color: #006a3e
+}
+
+.collapsible #round{
+  border-radius: 50px;
+
+}
