@@ -13,7 +13,12 @@ main {
   background-color: #006a3e
 }
 
-.collapsible #round{
+/*not currently working*/
+.collapsible {
   border-radius: 50px;
 
+}
+
+footer.page-footer {
+  background-color: #006a3e
 }

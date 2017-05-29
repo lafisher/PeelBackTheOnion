@@ -1,4 +1,4 @@
-// Include the momentJS library
+// require momentJS library
 var moment = require("moment");
 
 // Require Mongoose
@@ -28,7 +28,7 @@ var ArticleSchema = new Schema({
     required: true
   },
 
-  // Date of article scrape (saving as a string to pretify it in Moment-JS)
+  // Date of article scrape (save as a string) 
   updated: {
     type: String,
     default: moment().format('MMMM Do YYYY, h:mm A')

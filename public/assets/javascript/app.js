@@ -1,14 +1,11 @@
 $(document).ready(function(){
 
-  // Nav Bar Mobile Slider
-  $(".button-collapse").sideNav();
-
   //  FORM SUBMISSION to ADD a comment
   $('.add-comment-button').on('click', function(){
 
     var articleId = $(this).data("id");
 
-    // URL root (so it works in eith Local Host for Heroku)
+    // URL root 
     var baseURL = window.location.origin;
 
     // Get Form Data by Id
@@ -38,7 +35,7 @@ $(document).ready(function(){
     // Get _id of comment to be deleted
     var commentId = $(this).data("id");
 
-    // URL root (so it works in eith Local Host for Heroku)
+    // URL root 
     var baseURL = window.location.origin;
 
     // AJAX Call to delete Comment
