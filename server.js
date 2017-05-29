@@ -26,8 +26,8 @@ app.set('view engine', 'handlebars');
 
 // Database Configuration with Mongoose
 
-if(process.env.NODE_ENV == 'production'){
-  mongoose.connect('heroku link here');
+if(process.env.NODE_ENV==="production"){
+  mongoose.connect(process.env.MONGODB_URI);
 }
 else{
   mongoose.connect('mongodb://localhost/news-scraper');
