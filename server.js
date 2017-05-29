@@ -26,7 +26,7 @@ app.set('view engine', 'handlebars');
 
 // Database Configuration with Mongoose
 
-if(process.env.NODE_ENV==="production"){
+if(process.env.MONGODB_URI) {
   mongoose.connect(process.env.MONGODB_URI);
 }
 else{
