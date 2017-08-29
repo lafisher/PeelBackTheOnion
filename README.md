@@ -9,3 +9,5 @@ to run locally:
 5. run node server.js 
 6. nav to local host: 3000 in your browser 
 7. read and comment on all the fake news you can handle (trolls will be drowned in the lake)
+
+deployed on heroku: https://onion-peeler.herokuapp.com/articles
